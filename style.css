@@ -1,21 +1,87 @@
 * {
-    margin: 0; padding: 0;
-    font-family: minion-pro;
+      margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: franklin-gothic-urw;
     z-index: 0;
+    
    
   }
 
+  
+html {background-color:#EBEBEB}
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cartoons::-webkit-scrollbar {
+  display: none;
+}
+
+.cartoons {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+.header h1 {
+
+  font-size: 4vw;
+}
+
+.article p {
+  font-size: 1.2vw;
+}
+
+.fp-item-1 h3 {
+  margin-top: 2.344vw;
+  font-size: 1.3vw;
+}
+
+.header{
+ 
+padding-bottom: 2.344vw;
+min-height:100vh;
+ 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color:#2f2f2f;
+  
+
+}
 h2{
-  font-size: 18px;
+  font-size: 1.3vw;
  
   /* font-family:franklin-gothic-urw;*/
 }
+
+h1{
+  font-size: 2vw;
+
+}
+
+p {
+  font-size: 1.2vw;
+  margin-top: 0.547vw;
+}
   
 .logo{
-    font-size: 20px;
+  
+    font-size: 1.5vw;
+    background-color:#2f2f2f;
+    text-align: center;
+     margin-top: 0%;
+     padding-top: 5px;
+
     
 }
+
+
 
  a{
     color: black;
@@ -29,22 +95,30 @@ a:hover{
 
 .container {
   overflow-x: none;
-  background-color: white;
-  padding-top: 5%;
+ background-color: transparent;
+  padding-top: 3.5%;
   
+}
+
+#satirecontainer {
+    overflow-x: none;
+ background-color: transparent;
+
+  padding-top: 1.5vw;
 }
 
 .title{
   
  text-align: left;
  margin-left: 15%;
+ 
  font-family:franklin-gothic-urw;
- margin-bottom: 10px;
+ margin-bottom: 0.781vw;
  /* font-weight: bold;
 font-style: italic;*/
-font-size: 40px;
+font-size: 2.4vw;
  color: 
-#686573;
+#2f2f2f;
   
 }
 .sticky-top {
@@ -60,18 +134,20 @@ font-size: 40px;
 .mega-title{
   font-size: 4em;
   text-align: center;
-  padding-top:8%;
+  
   padding-left: 20%;
   padding-right: 20%;
+  
 }
 
 .intro{
   text-align: center;
+ 
   padding-left: 30%;
   padding-right: 30%;
-  font-size: 19px;
-  padding-top: 1%;
-  padding-bottom: 8%;
+  font-size: 1.2vw;
+  padding-bottom: 4%;
+ 
 }
 
 .title-cell{
@@ -89,47 +165,44 @@ font-size: 40px;
  
 
 
-
-.frontpage {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 15px;
-   margin: 0% 15% 0% 15%;
-  background-color: #ffffff;
-
-}
-
-
-
-
-.subsection{
-  margin-bottom:5px;
-  font-family: franklin-gothic-urw;
-  font-size: 20px;
- color: 
-#686573;
- font-weight: bold;
- 
-  
-
-}
-
 .cround {
   border-radius: 10px;
   overflow: auto;
   max-width: 100%;
   margin-top: auto;
   margin-bottom: 5%
-
 }
 
+.frontpage {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1.5vw;
+  margin: 0% 15% 0% 15%;
+  background-color: transparent;
+}
+
+.subsection {
+  margin-bottom:5px;
+  margin-top: 0px;
+  font-family: franklin-gothic-urw;
+  font-size: 1.4vw;
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+
+
 .round {
-  border-radius: 10px;
+ border-radius: 10px;
   overflow: auto;
   max-width: 40%;
-  margin-left: 3%;
+
+  margin-left: auto;
+
+  
+  
  
  /* border: 10px;
   border-color: black;
@@ -169,6 +242,7 @@ font-size: 40px;
   max-width: 100%;
    margin-top: 3%;
    margin-bottom: 3%;
+   border-radius: 10px;
 }
 
 .fp-cell {
@@ -192,6 +266,7 @@ font-size: 40px;
 .recent-reads-1 {
   grid-row: 1/ span 3;
   grid-column: 1 / span 3;
+  padding-bottom: 4%;
  
 }
 
@@ -251,7 +326,7 @@ font-size: 40px;
 .cartoons {
   grid-row: 1 / span 3;
   grid-column: 4 / span 3;
-  max-height: 600px;
+  max-height: 42.9vw;
   overflow-y: scroll;
 }
 
@@ -290,7 +365,9 @@ font-size: 40px;
   margin-bottom: auto;
 }
 
-
+.article {
+  margin-right: 5%;
+}
 
 
 
@@ -299,9 +376,36 @@ you want to quickly test how this works on your computer, just make your
 browser window really skinny */
 @media screen and (max-width: 800px) {
 
+  .footer{
+   
+    display: none;
+  }
+
+  *{
+    font-size: 15px !important;
+  }
+
+  .mega-title {
+    font-size: 30px !important;
+  }
+.intro{
+padding-left: 5%;
+padding-right: 5%}
+
+.mega-title{
+  padding-left: 5%;
+padding-right: 5%
+}
+  
+
 .logo{
         font-size: 20px;
+
+
     }
+
+
+
 
 .frontpage{
     /* grid-template-columns: 1fr;
@@ -315,9 +419,11 @@ browser window really skinny */
 
   .round{
     max-width: 100%;
+    
+    
   }
 
-  cround{
+  .cround{
     max-width: 100%;
   }
 
@@ -326,54 +432,6 @@ browser window really skinny */
 
 
 
-/*
-
-.recent-reads-1 {
-  grid-row: 1 / span 3;
-  grid-column: 1 / span 1;
-}
-
-
-
-.recent-reads-2 {
-  grid-row: 4 / span 2;
-  grid-column: 1 / span 1;
-}
-
-.recent-reads-3 {
-  grid-row: 6 / span 1;
-  grid-column: 1 / span 1;
-  padding-left: 3%;
-  padding-right: 3%;
-
-}
-
-.lighter-reads-1{
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 2
-}
-
-.lighter-reads-2{
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 2
-}
-
-.lighter-reads-3{
-  grid-column: 1 / span 1;
-  grid-row: 5 / span 2
-}
-
-.satire {
-  grid-row: 1 / span 6;
-  grid-column: 1 ;
-}
-
-.longer-reads-2 {
-  grid-row: 4 / span 3;
-  grid-column: 1 / span 1;
-}
-
-*/
 
 .uncool{
   padding-top: 6px;
@@ -384,8 +442,73 @@ browser window really skinny */
   align-items: center;
 }
 
-
+.fp-cell{
+  margin-top: 9px;
+}
 
     
   }
 
+
+.pendulum{
+  /* position:absolute; */
+  align-self: center;
+  width: 220px;
+  height: 180px;
+  background-color: #455681;/* #455681; */
+  border-radius: 5%;
+  align-items: center;
+  border-top: 18px solid #f5f0e1;
+  margin-top:3%;
+  margin-bottom: 3%;
+  /* transform: translate(-50%, -50%); */
+  }
+.pendulum_box{
+  display: flex;
+  padding: 120px 0 0 10px;
+  flex: 1;
+}
+.ball{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f8c6cf;
+  position: relative;
+  transform-origin: 50% -300%;
+  
+}
+  .ball::before{
+    content: '';
+    width: 2px;
+    height: 120px;
+    background-color: #EBEBEB;
+    left: 18px;
+    top: -120px;
+    position: absolute;
+  }
+
+.ball.first{
+  animation: firstball .9s alternate ease-in infinite;
+}
+
+@keyframes firstball{
+  0%{
+    transform: rotate(35deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+}
+
+.ball.last{
+  animation: lastball .9s alternate ease-out infinite;
+}
+
+@keyframes lastball{
+  50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-35deg);
+  }
+}
